@@ -1,4 +1,4 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.B, function () {
     if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
         radio.sendNumber(1)
     } else if (huskylens.isAppear(2, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
@@ -14,7 +14,7 @@ huskylens.initI2c()
 huskylens.initMode(protocolAlgorithm.OBJECTCLASSIFICATION)
 huskylens.clearOSD()
 huskylens.writeOSD("Remote Control", 92, 30)
-basic.showIcon(IconNames.StickFigure)
+basic.showIcon(IconNames.Happy)
 basic.forever(function () {
     huskylens.request()
 })
