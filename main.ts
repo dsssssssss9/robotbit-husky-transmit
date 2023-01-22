@@ -5,6 +5,12 @@ input.onButtonPressed(Button.B, function () {
         radio.sendNumber(2)
     } else if (huskylens.isAppear(3, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
         radio.sendNumber(3)
+    } else if (huskylens.isAppear(4, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+        radio.sendNumber(4)
+    } else if (huskylens.isAppear(5, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+        radio.sendNumber(5)
+    } else if (huskylens.isAppear(6, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
+        radio.sendNumber(6)
     } else {
         radio.sendNumber(0)
     }
